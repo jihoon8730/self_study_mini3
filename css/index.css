@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.navibar {
+  width: 100%;
+}
+
+.navibar-info, .navibar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navibar {
+  height: 50px;
+  background-color: white;
+  box-shadow: 1px 1px 5px gray;
+}
+.navibar .navibar-search {
+  margin-left: 10px;
+}
+
+.navibar-info {
+  width: 30%;
+  max-width: 200px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.navibar-info .color {
+  color: #9d9d9d;
+}
+
+.header {
+  padding: 15px;
+}
+.header h3 {
+  margin: 20px 0px 30px 0px;
+}
+
+.card-form {
+  height: 100px;
+  background: white;
+  padding: 10px;
+  margin: 10px;
+  font-size: 13px;
+  box-shadow: 1px 1px 5px gray;
+  border-radius: 5px;
+}/*# sourceMappingURL=index.css.map */
