@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0px;
+  font-family: "Roboto", sans-serif;
 }
 
 $white-color: white;
@@ -27,6 +28,31 @@ $font-base: 16px;
   }
 }
 
+.navibar-search {
+  display: flex;
+  height: 30px;
+  margin-top: 10px;
+  button {
+    background: #2f2f2f;
+    border: none;
+    border-radius: 5px;
+  }
+  i {
+    color: $white-color;
+  }
+  input {
+    box-shadow: 3px 2px 1px #041562;
+    border-radius: 5px;
+    border: none;
+    width: 150px;
+    transition: all 1s;
+    color: #041562;
+  }
+  input:focus {
+    width: 300px;
+  }
+}
+
 .navibar-info {
   @extend %flex-boxset;
   width: 30%;
@@ -39,20 +65,97 @@ $font-base: 16px;
   color: #9d9d9d;
 }
 
+.navibar-item {
+  position: relative;
+  .badge {
+    position: absolute;
+    left: 50%;
+    top: -20%;
+    font-size: 10px;
+  }
+}
+
 // header Dashboard,메뉴 부분
 .header {
-  padding: 15px;
+  padding-left: 8px;
   h3 {
-    margin: 20px 0px 30px 0px;
+    margin: 20px 0px 20px 0px;
   }
 }
 
 .card-form {
+  width: 100%;
+  min-width: 200px;
   height: 100px;
   background: $white-color;
+  margin-top: 10px;
   padding: 10px;
-  margin: 10px;
   font-size: $font-base - 3px;
   box-shadow: 1px 1px 5px gray;
   border-radius: 5px;
+  .card-form-text {
+    float: left;
+  }
+  i {
+    float: right;
+    color: gray;
+  }
+}
+
+// main chart부분
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+.main-chart {
+  width: 100%;
+  margin-top: 20px;
+  background-color: $white-color;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px gray;
+  p {
+    font-size: $font-base + 3px;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #efefef;
+    color: #2f2f2f;
+    border-radius: 5px 5px 0px 0px;
+  }
+}
+
+.main-tasks {
+  margin: 20px 0px 30px 0px;
+  color: #2f2f2f;
+  box-shadow: 1px 1px 5px gray;
+  th {
+    width: 800px;
+    text-align: center;
+    background-color: #efefef;
+    border-bottom: 1px solid gray;
+  }
+  td {
+    height: 50px;
+  }
+  .main-tdone {
+    padding-left: 10px;
+    text-align: left;
+    border-bottom: 1px solid #cfcfcf;
+    background: $white-color;
+  }
+  span {
+    float: right;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .main-chart {
+    width: 100%;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
 }
