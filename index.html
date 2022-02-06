@@ -26,127 +26,140 @@
 
 
   <body style="background: #f6f6f6;">
-  <div class="container">
-    <!-- navibar 검색창, 알람, 이메일 부분-->
-    <div class="navibar">
-      <div class="navibar-search">
-        <input type="text" placeholder="Search">
-        <button><i class="fas fa-search"></i></button>
+    <!-- sidebar 부분 -->
+    <div class="sidebar">
+      <div>
+        <i class="fas fa-home"></i>
+        <span>Home</span>
       </div>
-      <div class="navibar-info">
-        <div class="navibar-item">
-          <i class="fas fa-bell color mt-1"><span class="badge bg-danger">4</span></i>
-        </div>
-        <div class="navibar-item">
-          <i class="fas fa-envelope color mt-1"><span class="badge bg-danger">5</span></i>
-        </div>
-        <p class="color">jihoon Shin</p>
+      <div>
+        <i class="fas fa-car"></i>
+        <span>History</span>
       </div>
     </div>
-    <!-- header Dashboard,메뉴 부분 -->
-    <div class="header">
-      <div class="row">
-        <h3>Dashboard</h3>
-        <div class="col-md-3" >
-          <div class="card-form" style="border-left: 4px solid skyblue;">
-            <div class="card-form-text">
-              <p>Earnings(Monthly)</p>
-              <h4>$4000</h4>
-            </div>
-            <i class="fas fa-calendar fa-3x m-3"></i>
+    <div class="container">
+      <!-- navibar 검색창, 알람, 이메일 부분-->
+      <div class="navibar">
+        <div class="navibar-search">
+          <input type="text" placeholder="Search">
+          <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="navibar-info">
+          <div class="navibar-item">
+            <i class="fas fa-bell color mt-1"><span class="badge bg-danger">4</span></i>
           </div>
-        </div>
-        <div class="col-md-3" >
-          <div class="card-form" style="border-left: 4px solid #77D970;">
-            <div class="card-form-text">
-              <p>Earnings(Annual)</p>
-              <h4>$8000</h4>
-            </div>
-            <i class="fas fa-dollar-sign fa-3x m-3"></i>
+          <div class="navibar-item">
+            <i class="fas fa-envelope color mt-1"><span class="badge bg-danger">5</span></i>
           </div>
+          <p class="color">jihoon Shin</p>
         </div>
-        <div class="col-md-3" >
-          <div class="card-form" style="border-left: 4px solid royalblue;">
-            <div class="card-form-text">
-              <h4>13</h4>
-            </div>
-            <i class="fas fa-tasks fa-3x m-3"></i>
-          </div>
-        </div>
-        <div class="col-md-3" >
-          <div class="card-form" style="border-left: 4px solid #FEE440;">
-            <div class="card-form-text">
-              <p>Requests</p>
-              <h4>26</h4>
-            </div>
-            <i class="fas fa-comments fa-3x m-3"></i>
-        </div>
-        <div style="clear: both;"></div>
       </div>
-    </div>
-    <!-- main chart부분 -->
-    <div class="main row">
-      <div class="col-lg-8">
-        <div class="main-chart">
-          <p>Earnings Overview</p>
-          <canvas id="myChart" width="400" height="400"></canvas>
-          <script>
-            const ctx = document.getElementById('myChart').getContext('2d');
-            const myChart = new Chart(ctx, {
-              type: 'bar',
-              data: {
-                labels: ['red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                datasets: [{
-                  label: '요것이 실습!!',
-                  data: [12, 19, 3, 5, 2, 3],
-                  backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)'
-                  ],
-                  borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
-                  ],
-                  borderWidth: 1
-                }]
-              },
-              options: {
-                scales: {
-                  y: {
-                    beginAtZero: true
+      <!-- header Dashboard,메뉴 부분 -->
+      <div class="header">
+        <div class="row">
+          <h3>Dashboard</h3>
+          <div class="col-md-3">
+            <div class="card-form" style="border-left: 4px solid skyblue;">
+              <div class="card-form-text">
+                <p>Earnings(Monthly)</p>
+                <h4>$4000</h4>
+              </div>
+              <i class="fas fa-calendar fa-3x m-3"></i>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card-form" style="border-left: 4px solid #77D970;">
+              <div class="card-form-text">
+                <p>Earnings(Annual)</p>
+                <h4>$8000</h4>
+              </div>
+              <i class="fas fa-dollar-sign fa-3x m-3"></i>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card-form" style="border-left: 4px solid royalblue;">
+              <div class="card-form-text">
+                <h4>13</h4>
+              </div>
+              <i class="fas fa-tasks fa-3x m-3"></i>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card-form" style="border-left: 4px solid #FEE440;">
+              <div class="card-form-text">
+                <p>Requests</p>
+                <h4>26</h4>
+              </div>
+              <i class="fas fa-comments fa-3x m-3"></i>
+            </div>
+            <div style="clear: both;"></div>
+          </div>
+        </div>
+        <!-- main chart부분 -->
+        <div class="main row">
+          <div class="col-lg-8">
+            <div class="main-chart">
+              <p>Earnings Overview</p>
+              <canvas id="myChart" width="400" height="400"></canvas>
+              <script>
+                const ctx = document.getElementById('myChart').getContext('2d');
+                const myChart = new Chart(ctx, {
+                  type: 'bar',
+                  data: {
+                    labels: ['red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                      label: '요것이 실습!!',
+                      data: [12, 19, 3, 5, 2, 3],
+                      backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                      ],
+                      borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                      ],
+                      borderWidth: 1
+                    }]
+                  },
+                  options: {
+                    scales: {
+                      y: {
+                        beginAtZero: true
+                      }
+                    }
                   }
-                }
-              }
-            });
-          </script>
+                });
+              </script>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="main-tasks">
+              <table>
+                <th>Tasks</th>
+                <tr>
+                  <td class="main-tdone">Borrowed Items <span class="badge bg-primary">14</span></td>
+                  </span>
+                </tr>
+                <tr>
+                  <td class="main-tdone">Trello requests <span class="badge bg-primary">2</span></td>
+                </tr>
+                <tr>
+                  <td class="main-tdone">Marked Comments <span class="badge bg-primary">1</span></td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
-      </div> 
-      <div class="col-lg-4">
-        <div class="main-tasks">
-          <table>
-            <th>Tasks</th>
-            <tr>
-              <td class="main-tdone">Borrowed Items <span class="badge bg-primary">14</span></td>
-              </span>
-            </tr>
-            <tr>
-              <td class="main-tdone">Trello requests <span class="badge bg-primary">2</span></td>
-            </tr>
-            <tr>
-              <td class="main-tdone">Marked Comments <span class="badge bg-primary">1</span></td>
-            </tr>
-          </table>
-        </div>
+    
+    
       </div>
-    </div>
-  </div>
   </body>
 </html>

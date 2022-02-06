@@ -141,6 +141,32 @@
   margin-right: 10px;
 }
 
+.sidebar {
+  width: 150px;
+  height: 100vh;
+  position: fixed;
+  z-index: 5;
+  color: white;
+  background-color: #041562;
+  transition: all 0.5s;
+  transform: translateX(-100px);
+}
+.sidebar div {
+  margin: 12px 0px 0px 15px;
+}
+.sidebar i {
+  transition: all 0.5s;
+  transform: translateX(100px);
+}
+
+.sidebar:hover {
+  transition: all 0.5s;
+  transform: translateX(0px);
+}
+.sidebar:hover i {
+  transform: translateX(0px);
+}
+
 @media screen and (max-width: 760px) {
   .main-chart {
     width: 100%;
